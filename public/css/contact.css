@@ -1,0 +1,69 @@
+    body {
+        background-color: rgb(230, 230, 230);
+        font-family: 'Segoe', Tahoma, Geneva, Verdana, Sans-Serif;
+    }
+    
+    main {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 30px 0px 40px rgba(196, 196, 196), -30px 0px 40px rgba(196, 196, 196);
+        margin: auto;
+        max-width: 800px;
+    }
+    
+    h2 {
+        border-radius: 4px 4px;
+        color: #fff;
+        background-color: #4bcffa;
+    }
+    
+    form {
+        padding: 10px;
+    }
+    
+    .btn {
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 30px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        background-color: blueviolet;
+        margin-top: 10px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .text {
+        border-radius: 4px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 0px 1px;
+        border: none;
+        display: block;
+    }
+    
+    .fr_g {
+        margin-bottom: 15px;
+        display: block;
+        width: 30%;
+    }
+    
+    .input {
+        transition: 0.3s;
+        border-radius: 4px;
+        font-size: 13px;
+        padding: 10px;
+        height: 40px;
+        border: none;
+        box-shadow: 0px 0px 1px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    .input:focus {
+        direction: none;
+        border: none;
+        box-shadow: 0px 0px 10px;
+    }

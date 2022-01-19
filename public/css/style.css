@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.main-bar {
+    background-color: #22272B !important;
+    display: flow-root;
+    padding: 0 10%;
+}
+
+#check {
+    display: none;
+}
+
+.logo-header {
+    display: table;
+    float: left;
+    vertical-align: middle;
+    padding: 0;
+    color: #0d2baf;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 180px;
+    height: 68px;
+    position: relative;
+    z-index: 9;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.logo-header:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: -50%;
+    width: 80%;
+    transform: skew(30deg);
+    background-color: #34e7e4;
+}
+
+.logo-header:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: 10%;
+    width: 2000%;
+    background-color: #34e7e4;
+}
+
+.logo-header a {
+    color: #22272b;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 70px;
+    text-decoration: none;
+}
+
+ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    border-radius: 14px;
+}
+
+nav li.active a {
+    color: #020101;
+    background-color: #34e7e4;
+    border-radius: 14px;
+}
+
+nav li a {
+    padding: 15px 25px;
+    border: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 14px;
+}
+
+nav li:hover a {
+    color: #020101;
+    background-color: #34e7e4;
+    border-radius: 14px;
+}
+
+@media (max-width: 1250px) {
+    .main-bar {
+        padding: 0 2%;
+    }
+    nav li a {
+        padding: 15px 20px;
+    }
+}
+
+.checkbtn {
+    float: right;
+    width: 20px;
+    height: 18px;
+    position: relative;
+    transform: rotate(0);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    top: 25px;
+    display: none;
+}
+
+.checkbtn span {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0);
+    transition: 0.25s ease-in-out;
+}
+
+.checkbtn span:nth-child(1) {
+    top: 0;
+}
+
+.checkbtn span:nth-child(2) {
+    top: 7px;
+}
+
+.checkbtn span:nth-child(3) {
+    top: 14px;
+}
+
+@media (max-width:992px) {
+    .main-bar {
+        padding: 0 10%;
+    }
+    .checkbtn {
+        display: block;
+        margin-right: 40px;
+    }
+    nav ul {
+        position: fixed;
+        width: 350px;
+        height: 100vh;
+        background: #22272b;
+        top: 68px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media(max-width: 560px) {
+    nav ul {
+        display: block;
+        width: 100%;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
